@@ -1,0 +1,307 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: black;
+}
+
+.btn {
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.border-bottom {
+  border-bottom: 1px solid rgb(47, 51, 54);
+}
+
+.content-padding {
+  padding-inline: 16px;
+}
+
+.container {
+
+  display: flex;
+  justify-content: center;
+}
+
+.nav {
+  /* width: 242.200px; */
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  position: relative;
+}
+
+.nav-content {
+  display: flex;
+  flex-direction: column;
+  max-height: 70vh;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  overflow-y: auto;
+}
+
+.logo {
+  width: 50px;
+  padding-block: 2px;
+}
+
+.nav-item {
+  color: #fff;
+  width: 242.200px;
+  padding: 12px;
+  font-size: 22px;
+  text-decoration: none;
+  word-wrap: break-word;
+}
+
+.nav-item span {
+  font-weight: 400;
+  line-height: 24px;
+  margin-inline: 10px;
+}
+
+.nav-item i,
+.grok {
+  height: 26.25px;
+  width: 26.25px;
+}
+
+.send {
+  border-radius: 9999px;
+  width: 233px;
+  height: 52px;
+  margin-block: 4px;
+}
+
+.send span {
+  padding-inline: 32px;
+}
+
+.profile {
+  width: 259px;
+  margin-block: 12px;
+  padding: 12px;
+  position: absolute;
+  bottom: 0;
+}
+
+.profile {
+  display: flex;
+  align-items: center;
+  background-color: black;
+  color: #fff;
+  border: none;
+}
+
+.profile-photo {
+  width: 55px;
+}
+
+.user-name {
+  width: 159.5px;
+  margin-inline: 12px;
+}
+
+.user-name p {
+  font-size: 18px;
+  text-align: left;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.dots {
+  width: 18.75px;
+  font-weight: 700;
+  font-size: 18px;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  padding-block: 12px;
+  width: 600px;
+  border-inline:  1px solid rgb(47, 51, 54);
+}
+
+.content-header {
+  display: flex;
+}
+
+.content-header span {
+  padding: 16px;
+  flex-grow: 1;
+  font-size: 18px;
+  text-align: center;
+}
+
+.special {
+  color: #fff;
+  /* rgb(29, 155, 240); seçili öğenin altındaki mavilik*/
+}
+
+.followed {
+  color: rgb(113, 118, 123);
+}
+
+.sharing{
+  display: flex;
+  padding-top: 4px;
+}
+
+.sharing-photo img {
+  width: 40px;
+  padding-top: 8px;
+  margin-right: 8px;
+}
+
+.sharing-area {
+  padding-top: 4px;
+}
+
+.dropdown {
+  width: 93.5px;
+  padding-block: 2px;
+  text-align: center;
+  border: 1px solid rgb(29, 155, 240);
+  border-radius: 10px;
+  margin-bottom: 12px;
+  color: rgb(29, 155, 240);
+}
+
+.dropdown span{
+  font-weight: 500;
+}
+
+.dropdown i{
+  margin-left: 2px;
+  width: 16px;
+  height: 16px;
+  color: rgb(29, 155, 240);
+}
+
+.form{
+  padding-block: 12px;
+}
+
+.form-input{
+  width: 514px;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 24px;
+  padding-block: 2px;
+  background-color: black;
+  overflow-wrap: break-word;
+  outline: none;
+  border: none;
+  resize: none;
+}
+
+.answer-options-btn{
+  background-color: black;
+  color:  rgb(29, 155, 240);
+  border: none;
+  margin-bottom: 12px;
+}
+
+.answer-options-btn i{
+  width: 16px;
+  height: 16px;
+}
+
+.answer-options-btn span{
+  font-size: 15px;
+  margin-left: 4px;
+  line-height: 20px;
+  letter-spacing: 0.4px;
+}
+
+.sharing-items {
+  width: 534px;
+  padding-block: 10px;
+  padding-right: 16px;
+  margin-left: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color:  rgb(29, 155, 240);
+}
+
+.sharing-items-icon {
+  display: flex;
+  gap: 14px;
+}
+
+.sharing-items-icon i,
+.sharing-items-icon img{
+  cursor: pointer;
+}
+
+.sharing-items button {
+  padding: 10px 16px;
+  font-size: 16.2px;
+  border-radius: 30px;
+}
+
+.sharing-items-grok{
+  width: 16px;
+  height: 16px;
+  color:  rgb(29, 155, 240);
+}
+
+
+
+
+
+
+
+.content-items {
+  display: flex;
+  border-block: 1px solid rgb(47, 51, 54);
+}
+
+.content-items-photo {
+  margin-right: 8px;
+}
+
+.content-items-photo img {
+  width: 40px;
+}
+
+.head {
+  color: #fff;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.discover {
+  width: 350px;
+}
