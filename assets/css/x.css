@@ -31,12 +31,14 @@ a {
   justify-content: center;
 }
 
+
 .nav {
-  /* width: 242.200px; */
+  width: 242.200px;
+  top: 0;
   display: flex;
   flex-direction: column;
-  height: 100vh;
-  position: relative;
+  height: 100vh;;
+  position: sticky;
 }
 
 .nav-content {
@@ -50,6 +52,7 @@ a {
 
 .logo {
   width: 50px;
+  cursor: pointer;
   padding-block: 2px;
 }
 
@@ -86,16 +89,14 @@ a {
 }
 
 .profile {
-  width: 259px;
+  width: 242.2px;
+  display: flex;
+  justify-content: start;
+  align-items: center;
   margin-block: 12px;
   padding: 12px;
-  position: absolute;
+  position: fixed;
   bottom: 0;
-}
-
-.profile {
-  display: flex;
-  align-items: center;
   background-color: black;
   color: #fff;
   border: none;
@@ -106,12 +107,12 @@ a {
 }
 
 .user-name {
-  width: 159.5px;
+  width: 159px;
   margin-inline: 12px;
 }
 
 .user-name p {
-  font-size: 18px;
+  font-size: 17px;
   text-align: left;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -120,8 +121,8 @@ a {
 
 .dots {
   width: 18.75px;
-  font-weight: 700;
-  font-size: 18px;
+  font-weight: 600;
+  font-size: 16px;
 }
 
 .content {
@@ -129,7 +130,7 @@ a {
   flex-direction: column;
   padding-block: 12px;
   width: 600px;
-  border-inline:  1px solid rgb(47, 51, 54);
+  border-inline: 1px solid rgb(47, 51, 54);
 }
 
 .content-header {
@@ -152,7 +153,7 @@ a {
   color: rgb(113, 118, 123);
 }
 
-.sharing{
+.sharing {
   display: flex;
   padding-top: 4px;
 }
@@ -177,22 +178,22 @@ a {
   color: rgb(29, 155, 240);
 }
 
-.dropdown span{
+.dropdown span {
   font-weight: 500;
 }
 
-.dropdown i{
+.dropdown i {
   margin-left: 2px;
   width: 16px;
   height: 16px;
   color: rgb(29, 155, 240);
 }
 
-.form{
+.form {
   padding-block: 12px;
 }
 
-.form-input{
+.form-input {
   width: 514px;
   color: #fff;
   font-size: 20px;
@@ -206,19 +207,19 @@ a {
   resize: none;
 }
 
-.answer-options-btn{
+.answer-options-btn {
   background-color: black;
-  color:  rgb(29, 155, 240);
+  color: rgb(29, 155, 240);
   border: none;
   margin-bottom: 12px;
 }
 
-.answer-options-btn i{
+.answer-options-btn i {
   width: 16px;
   height: 16px;
 }
 
-.answer-options-btn span{
+.answer-options-btn span {
   font-size: 15px;
   margin-left: 4px;
   line-height: 20px;
@@ -233,7 +234,7 @@ a {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  color:  rgb(29, 155, 240);
+  color: rgb(29, 155, 240);
 }
 
 .sharing-items-icon {
@@ -242,7 +243,7 @@ a {
 }
 
 .sharing-items-icon i,
-.sharing-items-icon img{
+.sharing-items-icon img {
   cursor: pointer;
 }
 
@@ -252,20 +253,15 @@ a {
   border-radius: 30px;
 }
 
-.sharing-items-grok{
+.sharing-items-grok {
   width: 16px;
   height: 16px;
-  color:  rgb(29, 155, 240);
+  color: rgb(29, 155, 240);
 }
-
-
-
-
-
-
 
 .content-items {
   display: flex;
+  padding-block: 12px;
   border-block: 1px solid rgb(47, 51, 54);
 }
 
@@ -277,8 +273,51 @@ a {
   width: 40px;
 }
 
+.content-items-info {
+  width: 100%;
+}
+
 .head {
-  color: #fff;
+  font-size: 18px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 2px;
+}
+
+.content-items-info-user {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  color: rgb(113, 118, 123, 1);
+}
+
+.content-items-info-user-name {
+  color: rgb(231, 233, 234);
+}
+
+.content-items-info-user-name:hover {
+  text-decoration: underline;
+  text-decoration-color: rgb(231, 233, 234);
+}
+
+.content-items-info-dots {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: rgb(113, 118, 123);
+}
+
+.info {
+  color: rgb(231, 233, 234);
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.info img {
+  width: 100%;
+  margin-top: 12px;
+  border-radius: 16px;
+  cursor: pointer;
 }
 
 
@@ -286,14 +325,61 @@ a {
 
 
 
+.interaction {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 
+.interaction-item {
+  display: flex;
+  gap: 18px;
+} 
 
+.fas, .far {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: rgb(114, 118, 123);
+  font-size: 16px;
+}
 
+.fas p, .far p{
+  font-size: 13px;
+  letter-spacing: 1.5px;
+}
 
+.interaction span{
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  font-size: 16px;
+  gap: 4px;
+} 
 
+.fa-comment:hover,
+.fa-signal:hover, 
+.bookmark:hover,
+.bracket:hover{
+  color: rgb(29 155 240);
+}
 
+.fa-repeat:hover{
+  color: rgb(0, 186, 124);
+}
 
+.fa-heart:hover
+{
+  color: rgb(249, 24, 128); 
+}
 
+.bookmark {
+  cursor: pointer;
+}
+
+.bracket {
+  cursor: pointer;
+}
 
 
 
